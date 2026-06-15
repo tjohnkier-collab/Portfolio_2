@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>John Kier B. Turco — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="design.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">John Kier B. Turco</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#works">Works</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-wrap">
+    <div class="reveal">
+      <div class="hero-badge">
+        <span></span> Open to internship &amp; collaboration
+      </div>
+      <h1 class="hero-name">
+        Hello, I'm<br>
+        <em>John Kier B. Turco</em>
+      </h1>
+      <p class="hero-desc">
+        A 3rd Year BSIS student passionate about creating simple, efficient, and user-friendly digital solutions.
+      </p>
+      <div class="hero-btns">
+        <a href="#works" class="btn-primary">View My Works</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-card reveal" style="transition-delay:0.15s;">
+      <div class="photo-circle">
+        <img src="4c777eba-1f9e-4795-8fa2-ac4980b6bee9.jpg" alt="John Kier B. Turco" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img reveal">
+      <img src="4c777eba-1f9e-4795-8fa2-ac4980b6bee9.jpg" alt="John Kier B. Turco" />
+    </div>
+    <div class="reveal" style="transition-delay:0.1s">
+      <p class="sec-label">About Me</p>
+      <h2 class="sec-title">A student who builds <em>with purpose.</em></h2>
+      <div>
+        <p>Hi! I'm John Kier B. Turco, I am a BSIS student who enjoys creating simple and functional digital systems that solve real-world problems. I am passionate about learning new technologies, improving my technical skills, and designing user-friendly experiences.</p>
+        <p>Through my academic journey, I have gained experience in web development, database management, and system analysis. These experiences helped me become more creative, adaptable, and detail-oriented when working on projects.</p>
+        <p>I continue to explore opportunities that will help me grow as a future Information Systems professional and contribute meaningful ideas through technology.</p>
+      </div>
+      <div class="info-row">
+        <div class="info-item">
+          <label>Program</label>
+          <span>BS Information System</span>
+        </div>
+        <div class="info-item">
+          <label>School</label>
+          <span>Davao Del Norte State College</span>
+        </div>
+        <div class="info-item">
+          <label>Year Level</label>
+          <span>3rd Year</span>
+        </div>
+        <div class="info-item">
+          <label>Status</label>
+          <span>Student</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+  <p class="sec-label reveal">Academic Works</p>
+  <h2 class="sec-title reveal">Things I've <em>built &amp; studied</em></h2>
+  <p class="sec-sub reveal">A collection of academic works and outputs developed from 1st to 3rd year, showcasing skills in design, development, and creativity through various activities, systems, and visual works.</p>
+
+  <div class="yr-tabs reveal">
+    <button class="yr-tab active" onclick="switchYear('y1', this)">
+      <span class="t-num">01</span>
+      <span class="t-label">1st Year</span>
+    </button>
+    <button class="yr-tab" onclick="switchYear('y2', this)">
+      <span class="t-num">02</span>
+      <span class="t-label">2nd Year</span>
+    </button>
+    <button class="yr-tab" onclick="switchYear('y3', this)">
+      <span class="t-num">03</span>
+      <span class="t-label">3rd Year</span>
+    </button>
+  </div>
+
+  <!-- 1ST YEAR -->
+  <div id="y1" class="yr-panel active">
+    <div class="works-grid">
+      <div class="work-card" onclick="openModal('386826615_839406254525997_508477862181567340_n.png','','Introduction to Computing','Digital Drawing','A cute character illustration created using basic digital drawing tools, showing foundational creativity and design.')">
+        <div class="wc-thumb">
+          <img src="386826615_839406254525997_508477862181567340_n.png" alt="Digital Drawing" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">Introduction to Computing</p>
+          <h3>Digital Drawing</h3>
+          <p>A cute character illustration created using basic digital drawing tools, showing foundational creativity and design.</p>
+        </div>
+      </div>
+
+      <div class="work-card" onclick="openModal('445805488_431980486399770_7984117451029998630_n.jpg','🤖','Introduction to Computing','Robot Illustration','A detailed robot character built using vector-based tools, demonstrating control of shapes, colors, and composition.')">
+        <div class="wc-thumb">
+          <img src="445805488_431980486399770_7984117451029998630_n.jpg" alt="Robot Illustration" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none">🤖</div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">Introduction to Computing</p>
+          <h3>Robot Illustration</h3>
+          <p>A detailed robot character built using vector-based tools, demonstrating control of shapes, colors, and composition.</p>
+        </div>
+      </div>
+
+      <div class="work-card" onclick="openModal('445777371_332233213247274_5017080738715106566_n.jpg','','Introduction to Computing','Photo Editing','A birthday photo edit combining images and design elements into a polished, festive output.')">
+        <div class="wc-thumb">
+          <img src="445777371_332233213247274_5017080738715106566_n.jpg" alt="Photo Editing" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">Introduction to Computing</p>
+          <h3>Photo Editing</h3>
+          <p>A birthday photo edit combining images and design elements into a polished, festive output.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2ND YEAR -->
+  <div id="y2" class="yr-panel">
+    <div class="works-grid">
+      <div class="work-card" onclick="openModal('8d1548be-659b-4a16-949a-2137732ba120.jpg','','System Analysis and Design','Logo Design','A website designed to connect donors and recipients, making food sharing simple and accessible through technology.')">
+        <div class="wc-thumb">
+          <img src="8d1548be-659b-4a16-949a-2137732ba120.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">System Analysis and Design</p>
+          <h3>Logo Design</h3>
+          <p>A website designed to connect donors and recipients, making food sharing simple and accessible through technology.</p>
+        </div>
+      </div>
+
+      <div class="work-card" onclick="openModal('b2e104c1-2230-4219-9d76-bc6cede4f84c.jpg','','System Analysis and Design','System UI','The login page of the website, allowing registered users to securely access and manage their donation activities.')">
+        <div class="wc-thumb">
+          <img src="b2e104c1-2230-4219-9d76-bc6cede4f84c.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">System Analysis and Design</p>
+          <h3>System UI</h3>
+          <p>The login page of the website, allowing registered users to securely access and manage their donation activities.</p>
+        </div>
+      </div>
+
+    
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3RD YEAR -->
+  <div id="y3" class="yr-panel">
+    <div class="works-grid">
+      <div class="work-card" onclick="openModal('56f18ca4-52a8-45dc-9272-cd84317cbf59.jpg','','HCI Project','Cradle Care','A mobile app concept for new and expecting parents, providing resources and guidance on infant care and child development.')">
+        <div class="wc-thumb">
+          <img src="56f18ca4-52a8-45dc-9272-cd84317cbf59.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">HCI Project</p>
+          <h3>Cradle Care</h3>
+          <p>A mobile app concept for new and expecting parents, providing resources and guidance on infant care and child development.</p>
+        </div>  
+      </div>
+
+      <div class="work-card" onclick="openModal('03988098-1a33-48be-a16b-382aac32fa79.jpg','','HCI Project','Cradle Care UI/UX','A Figma-based UI/UX prototype of the Cradle Care app, designed as a startup concept showcasing intuitive mobile interface design for parents.')">
+        <div class="wc-thumb">
+          <img src="03988098-1a33-48be-a16b-382aac32fa79.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">HCI Project</p>
+          <h3>Cradle Care UI/UX</h3>
+          <p>A Figma-based UI/UX prototype of the Cradle Care app, designed as a startup concept showcasing intuitive mobile interface design for parents.</p>
+        </div>
+      </div>
+
+      <div class="work-card" onclick="openModal('63ab2c05-db4d-4345-93a4-5cac7f03db26.jpg','','HTML Project','Panabo Fitness Hub Website','A fitness center directory website built for Panabo City, designed to help users discover and explore the best gyms in the area.')">
+        <div class="wc-thumb">
+          <img src="63ab2c05-db4d-4345-93a4-5cac7f03db26.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">HTML Project</p>
+          <h3>Panabo Fitness Hub Website</h3>
+          <p>A fitness center directory website built for Panabo City, designed to help users discover and explore the best gyms in the area.</p>
+        </div>
+      </div>
+        <div class="work-card" onclick="openModal('5e0f4b2a-a7d2-4175-bd80-1caeb220cf07.jpg','','HTML Project','Panabo Fitness Hub Website','A website designed to showcase and guide users to the best fitness centers in Panabo City, built as our final HTML project.')">
+        <div class="wc-thumb">
+          <img src="5e0f4b2a-a7d2-4175-bd80-1caeb220cf07.jpg" alt="Project" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="wc-thumb-placeholder" style="display:none"></div>
+          <span class="wc-thumb-tag">Project image</span>
+        </div>
+        <div class="wc-body">
+          <p class="wc-cat">HTML Project</p>
+          <h3>Panabo Fitness Hub Website</h3>
+          <p>A website designed to showcase and guide users to the best fitness centers in Panabo City, built as our final HTML project.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <p class="sec-label reveal">Certificates &amp; Awards</p>
+  <h2 class="sec-title reveal">Recognition &amp; <em>Achievements</em></h2>
+  <p class="sec-sub reveal">Recognitions earned through online courses and training programs.</p>
+
+  <div class="cert-cards-row reveal">
+
+    <!-- CARD — i-update ang src sa imong actual certificate image filename -->
+    <div class="cert-img-card" onclick="openModal('80e59835-1be6-4175-a9bc-c7545e65db9e.jpg','','CISCO NETWORKING ACADEMY','Cybersecurity Essentials','Offered by Davao Del Norte State College through the Cisco Networking Academy program.')">
+      <div class="cic-preview">
+        <img src="80e59835-1be6-4175-a9bc-c7545e65db9e.jpg" alt="Certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        
+      </div>
+      <div class="cic-body">
+        <p class="cic-issuer">CISCO NETWORKING ACADEMY</p>
+        <h3>Cybersecurity Essentials</h3>
+        <p>Offered by Davao Del Norte State College through the Cisco Networking Academy program.</p>
+        <span class="cic-date">12 May 2026</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-wrap">
+    <div class="contact-header reveal">
+      <p class="sec-label">Contact Me</p>
+      <h2 class="sec-title">Let's start a <em>conversation.</em></h2>
+      <p class="sec-sub">Whether it's a project, an internship opportunity, or just a friendly hello — I'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <a href="mailto:your.email@email.com" class="contact-item">
+        <div class="ci-icon">✉️</div>
+        <div>
+          <p class="ci-label">Email</p>
+          <p class="ci-value">Turco.JohnKier@dnsc.edu.ph</p>
+        </div>
+      </a>
+      <a href="#" class="contact-item">
+        <div class="ci-icon">👤</div>
+        <div>
+          <p class="ci-label">Facebook</p>
+          <p class="ci-value">John Kier Turco</p>
+        </div>
+      </a>
+      <a href="#" class="contact-item">
+        <div class="ci-icon">📞</div>
+        
+        <div>
+          <p class="ci-label">Phone</p>
+          <p class="ci-value">09354891762</p>
+        </div>  
+      </a>
+     
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="proj-modal" class="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-img-wrap">
+      <img id="modal-img" src="" alt="" />
+      <div id="modal-placeholder" class="modal-placeholder"></div>
+    </div>
+    <div class="modal-info">
+      <p id="modal-cat" class="wc-cat"></p>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-copy"></span>
+  <span class="footer-name">John Kier B. Turco</span>
+  <a href="#hero" class="footer-top">↑ Back to top</a>
+</footer>
+
+<script>
+// Custom cursor
+const dot = document.getElementById('cur-dot');
+const ring = document.getElementById('cur-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  dot.style.left = mx + 'px';
+  dot.style.top  = my + 'px';
+});
+
+(function animRing() {
+  rx += (mx - rx) * 0.13;
+  ry += (my - ry) * 0.13;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animRing);
+})();
+
+document.querySelectorAll('a, button, .work-card, .cert-img-card, .contact-item').forEach(el => {
+  el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+  el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+});
+
+// Scroll reveal
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Year tab switcher
+function switchYear(id, btn) {
+  document.querySelectorAll('.yr-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.yr-tab').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+
+// Modal
+function openModal(img, placeholder, cat, title, desc) {
+  const modal = document.getElementById('proj-modal');
+  const modalImg = document.getElementById('modal-img');
+  const modalPh = document.getElementById('modal-placeholder');
+  document.getElementById('modal-cat').textContent = cat;
+  document.getElementById('modal-title').textContent = title;
+  document.getElementById('modal-desc').textContent = desc;
+  if (img) {
+    modalImg.src = img;
+    modalImg.style.display = 'block';
+    modalPh.style.display = 'none';
+  } else {
+    modalImg.style.display = 'none';
+    modalPh.style.display = 'flex';
+    modalPh.textContent = placeholder;
+  }
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(e) {
+  if (e && e.target !== document.getElementById('proj-modal') && !e.target.classList.contains('modal-close')) return;
+  document.getElementById('proj-modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal({}); });
+
+// Contact form
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  btn.style.opacity = '0.7';
+  setTimeout(() => {
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = '#2d7a4f';
+    btn.style.opacity = '1';
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      btn.disabled = false;
+      e.target.reset();
+    }, 3000);
+  }, 1000);
+}
+</script>
+</body>
+</html>
